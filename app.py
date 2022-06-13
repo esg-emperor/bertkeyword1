@@ -84,8 +84,8 @@ with st.form(key="my_form"):
             "# of results",
             min_value=1,
             max_value=30,
-            value=10,
-            help="You can choose the number of keywords/keyphrases to display. Between 1 and 30, default number is 10.",
+            value=30,
+            help="You can choose the number of keywords/keyphrases to display. Between 1 and 30, default number is 30.",
         )
         min_Ngrams = st.number_input(
             "Minimum Ngram",
