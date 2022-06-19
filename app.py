@@ -2,6 +2,8 @@ import streamlit as st
 import numpy as np
 from pandas import DataFrame
 from keybert import KeyBERT
+from keyphrase_vectorizers import KeyphraseCountVectorizer
+
 
 # For Flair (Keybert)
 from flair.embeddings import TransformerDocumentEmbeddings
@@ -183,6 +185,7 @@ keywords = kw_model.extract_keywords(
     stop_words=StopWords,
     top_n=top_N,
     diversity=Diversity,
+    vectorizer=KeyphraseCountVectorizer()
 )
 
 st.markdown("## ** Check & download results **")
