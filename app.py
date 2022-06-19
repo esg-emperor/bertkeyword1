@@ -218,7 +218,7 @@ cmRed = sns.light_palette("red", as_cmap=True)
 df = df.style.background_gradient(
     cmap=cmGreen,
     subset=[
-        "Relevancy",
+        "Relevancy", 
     ],
 )
 
